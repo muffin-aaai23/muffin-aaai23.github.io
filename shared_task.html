@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimodal AI for Financial Forecasting Workshop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">Muffin@AAAI 2023</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="talks.html">Invited Talks</a></li>
+        <li><a href="cfp.html">CFP</a></li>
+        <li class="active"><a href="shared_task.html">Shared Tasks</a></li>
+        <li><a href="index.html#important-date">Important Dates</a></li>
+        <li><a href="index.html#organizer">Organizers</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/muffin.jpeg');">
+  <div id="pageintro" class="hoc clear">
+    <!-- ################################################################################################ -->
+      <h3 class="heading">The AAAI-2023 Workshop on <br>Multimodal AI for Financial Forecasting</h3>
+      <h4>Feb 13, 2023</h4>
+      <h4>Location: Washington DC, USA</h4>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section>
+      <div>
+        <h6 class="heading"> About the Shared Task</h6>
+        <p>
+          The Multimodal AI for Finance Forecasting (Muffin) workshop will host two shared tasks on challenging multimodal financial forecasting problems using artificial intelligence:
+        </p>
+
+        <h5>Task-1: Financial Prediction from Conference Call Videos</h5>
+        <p>
+          <br>Monetary policy calls (MPC) provide important insights into the actions taken by a country’s central bank on economic goals related to inflation, employment, prices, and interest rates. Investors and analysts critically analyze these video calls to forecast prices of stock market, treasury bonds, gold, and currency exchange rates post the conference call. Prior works in the NLP literature have looked at what is being said during the press conferences although there is a greater need to focus on how it is being said. The use of multimodal (visual+textual+audio) input to answer this question has been largely limited. Non-verbal behavioral cues from conference videos such as eye-movements, facial expressions, postures, gaits, complexity of language, vocal tone and facial expressions of the speakers may reflect emotions that subjects may not express through words and have been found to be strongly correlated with enhanced trading activities in the financial markets. Interpreting and extracting information from financial conference calls reveals difficult challenges such as: (1) Gap in current multimodal AI methods for simultaneously leverage visual, vocal and verbal modalities; (2) Long length of videos (50min to 1 hour) with multi-page text transcripts (3) Need to explore few-shot,  semi-supervised, and self-supervised  methods due to limited training data; (4) Large variability in conference calls across geographies due to different speakers, demographics, and economic conditions causing unintended bias. To this end, we curated a dataset of video conference calls from 2009 to 2022 released by central banks of 6 major English-speaking economies - USA, Canada, European Union, United Kingdom, New Zealand, and South Africa. The data has been processed to extract video frames, audio recordings, and utterance-aligned text transcripts. The task is to predict the volatility and price movement of stock market indices, gold, currency exchange rates, and bond prices T days after a conference call. We provide a cumulative of 25K data points split across training/development/testing for experimentation.
+          <br>The train/validation/test corpus can be downloaded from: <a href ="https://github.com/monopoly-monitory-policy-calls/MONOPOLY"> here </a>.
+          <br>Relevant research paper: <a href ="https://dl.acm.org/doi/pdf/10.1145/3503161.3548380"> MONOPOLY: Financial Prediction from MONetary POLicY Conference Videos Using Multimodal Cues </a>
+        </p>
+
+        <h5>Task-2: Cryptocurrency Bubble Detection on Social Media</h5>
+        <p>
+          Cryptocurrency trading presents a new investment opportunity for maximizing profits. The rising ubiquity of speculative trading of cryptocurrencies over social media leads to rapid escalation and crash of price in a short period of time, also called bubbles, causing investment losses and bankruptcy. These crypto bubbles are strongly tied to user sentiment and social media usage as opposed to conventional value driven stocks and equities. Such financial bubbles are often a result of social media hype and the intensity of contagion among users, rendering both conventional statistical models and contemporary ML models weak as they are not built to deal with large volumes of unstructured, user-generated text on social media. In order to identify and safeguard against such bubbles, we formulate CryptoBubbles Detection Challenge - a novel multi-span prediction task over future days of time series price date for crypto assets. We have curated a dataset of 50 most traded crypto coins by volume from top 9 crypto exchanges such as Binance, Gateio, etc to obtain a time series of prices for 450+ crypto assets over five years accompanied with over 2.4 million related tweets.
+          <br>The train/validation/test corpus can be downloaded from: <a href ="https://github.com/gtfintechlab/cryptobubbles-naacl"> here </a>.
+          <br>Relevant research paper: <a href ="https://aclanthology.org/2022.naacl-main.405.pdf"> Cryptocurrency Bubble Detection: A New Stock Market Dataset, Financial Task & Hyperbolic Models</a>
+        </p>
+        
+        <h5> Participation Guidelines </h5>
+        In order to participate, please first fill out this form to register for the shared tasks: https://forms.gle/Z8e2UT5dtn5gsejW8. The team name that is provided in this form will be used in the subsequent submissions and communications.
+        <br> Use the train / validation / test dataset provided in the github pages to design your systems. Final results should be submitted as a 4-8 page paper to the EasyChair Submission Link by Shared Tasks paper submission deadline (December 15, 2023). All submitted papers will be evaluated based on their (1) novely, (2) performance results, (3) system deswcription, and (4) reproducability. Participants are highly encouraged to submit their code and scripts to enhance reproducability and describe the system parametrs in sufficient details. Accepted submissions will be published as part of workshop proceedings.
+        
+        <p> 
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color: lightgray;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section>
+      <div>
+        <h6 class="heading">Topics</h6>
+        <p>
+          This workshop will hold a research track and a shared task track. The research track aims to explore recent advances and challenges of multimodal AI for finance. As this topic is an inherently multi-modal subject, researchers from artificial intelligence, computer vision, speech processing, natural language processing, data mining, statistics, optimization, and other fields are invited to submit papers on recent advances, resources, tools, and challenges on the broad theme of Multimodal AI for finance. The topics of the workshop include but are not limited to the following:
+        </p>
+
+        <ul>
+          <li>Transformer models / Self-supervised / Transfer Learning on Financial Data</li>
+          <li>Machine Learning for Finance</li>
+          <li>Natural Language Processing and Speech Applications for Finance</li>
+          <li>Conversational dialogue modeling for Financial Conference Calls</li>
+          <li>Social media and User NLP for Finance</li>
+          <li>Entity extraction and linking, Named-entity recognition, information extraction, relationship extraction, ontology learning in financial documents</li>
+          <li>Financial Document Processing </li>
+          <li>Multi-modal financial knowledge discovery</li>
+          <li>Financial Event detection from Multimedia</li>
+          <li>Visual-linguistic learning for financial video analysis</li>
+          <li>Video understanding (human behavior cognition, topic mining, facial expression detection, emotion detection, deception detection, gait and posture analysis, etc.)</li>
+          <li>Data annotation, acquisition, augmentation, feature engineering, for financial/time-series analysis</li>
+          <li>Bias analysis and mitigation in financial models and data</li>
+          <li>Statistical Modeling for Time Series Forecasting</li>
+          <li>Interpretability and explainability for financial AI models</li>
+          <li>Privacy-preserving AI for finance</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section>
+      <div>
+        <h6 class="heading">Important Dates</h6>
+        <ul>
+          <li>Paper submission deadline: November 4, 2022</li>
+          <li>Acceptance notification: November 18, 2022</li>
+          <li>Camera-ready submission: December 25, 2022</li>
+          <li><strong>Muffin workshop at AAAI 2023:</strong> Feb 13, 2022</li>
+        </ul>
+        <p>All deadlines are “anywhere on earth” (UTC-12)</p>
+      </div>
+    </section>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row3" style="background-color: lightgray;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section>
+      <div>
+        <h6 class="heading">Submission</h6>
+        <p>Authors are invited to submit their unpublished work that represents novel research.
+           The papers should be written in English using the AAAI-23 author kit
+           and follow the AAAI 2023 formatting guidelines.
+           Authors can also submit the supplementary materials, including technical appendices,
+           source codes, datasets, and multimedia appendices.
+           All submissions, including the main paper and its supplementary materials, should be fully anonymized.
+           For more information on formatting and anonymity guidelines, please refer to AAAI 2023 call for paper page.
+        </p>
+
+        <p>All papers will be double blind peer reviewed. Muffin workshop accepts both long papers and short papers:</p>
+        <ul>
+          <li>
+            <p>
+              Short Paper: Up to 4 pages of content including the references.
+              Upon the acceptance, the authors are provided with 1 more page to address the reviewer's comments.
+            </p>
+          </li>
+          <li>
+            <p>
+              Long Paper: Up to 8 pages of content including the references.
+              Upon the acceptance, the authors are provided with 1 more page to address the reviewer's comments.
+            </p>
+          </li>
+          <li>
+            <p>
+              Shared Task Track:  Participants are invited to take part in <a href="https://muffin-aaai23.github.io/shared_task.html">shared tasks</a>: (1) Financial Prediction from Conference Call Videos and (2) Cryptocurrency Bubble Detection. Participants are invited to submit a system paper of 4-8 pages of content including the references.
+             </p>
+          </li>
+        </ul>
+
+        <p>Two reviewers with the same technical expertise will review each paper.
+           Authors of the accepted papers will present their work in either the Oral or Poster session.
+           All accepted papers will appear on the workshop proceedings that will be published on <a
+                    href="http://ceur-ws.org/">CEUR-WS</a>.
+           The authors will keep the copyright of their papers that are published on <a
+                    href="http://ceur-ws.org/">CEUR-WS</a>.
+           The workshop proceedings will be indexed by <a href="https://dblp.org/">DBLP</a>.
+        </p>
+        <p>Paper must be submitted using <a href="https://easychair.org/conferences/?conf=muffinaaai2023">EasyChair (TBD)</a>.
+           For information on System Paper submission for the share tasks, please refer to our <a
+                    href="shared_task.html">shared tasks</a> page.</p>
+        <p></p>
+
+          </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+
+<div class="wrapper row3" style="background-color: midnightblue;">
+  <main class="hoc container clear">
+    <div class="clear">
+      <p style="color: antiquewhite;">Contact us: muffin-aaai23@googlegroups.com</p>
+    </div>
+  </main>
+</div>
+
+
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
